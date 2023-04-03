@@ -24,3 +24,5 @@ training_ds["Age"].fillna(avg_age, inplace=True)
 training_ds.drop("Cabin", axis=1)
 # %%
 # Data Cleaning: Drop the row in Embarked column that is NaN.
+training_ds.dropna(subset="Embarked", inplace=True)
+# %%
